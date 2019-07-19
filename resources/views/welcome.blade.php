@@ -61,7 +61,7 @@
         				<div class="col-lg-6">
         					<div class="event_text">
         						<h3>Next Event will Start in </h3>
-								<a href="{{ url("/eventDetails/$tarray[3]") }}"><h4>{{\App\Http\Controllers\PagesController::singleEventTitle($tarray[3])}}  </h4></a>
+								<a href="{{ url("/eventDetails/$tarray[3]") }}"><h4>{{\App\Http\Controllers\PagesController::singleEventTitle($tarray[3])}}</h4></a>
 							
         					</div>
         				</div>

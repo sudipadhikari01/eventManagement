@@ -166,8 +166,15 @@ class PagesController extends Controller
 
 
     public static function singleEventTitle($id){
-        $singleEvent = \App\EventRegistration::find($id);
-        return $singleEvent->event_title;
+
+        if($id ==null){
+            return null;
+        }
+        else{
+            $singleEvent = \App\EventRegistration::find($id);
+            return $singleEvent->event_title;
+        }
+       
     }
 
     
